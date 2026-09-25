@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "jsx": "preserve" },
+  "include": ["src/processing", "src/types", "src/services", "src/utils", "src/workers", "tests"],
+  "references": []
+}

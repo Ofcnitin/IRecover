@@ -1,0 +1,22 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+coverage
+tools/gpu-consistency/.bundle
+
+# tsc build output/incremental cache -- composite tsconfig.node.json must
+# emit somewhere, but not into the source tree (see tsconfig*.json outDir/
+# tsBuildInfoFile)
+.tsbuildcache
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Secrets -- never commit real Cloudinary credentials
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler

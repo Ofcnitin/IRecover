@@ -1,0 +1,33 @@
+{
+  "name": "irecover",
+  "version": "1.0.0",
+  "description": "IRecover -- convert infrared / near-infrared images into a visible-light-style RGB approximation using classical (non-ML) image processing, with an optional Cloudinary-powered Photo Finish stage.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "pages:dev": "wrangler pages dev -- npm run dev",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "pages:deploy": "npm run build && wrangler pages deploy dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gpu-consistency": "tsx tools/gpu-consistency/run.ts",
+    "gpu-consistency:webgpu": "tsx tools/gpu-consistency/webgpu/run-webgpu.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5",
+    "wrangler": "^3.78.0"
+  },
+  "license": "MIT"
+}
