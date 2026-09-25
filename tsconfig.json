@@ -17,6 +17,6 @@
     "noFallthroughCasesInSwitch": true,
     "tsBuildInfoFile": ".tsbuildcache/tsconfig.tsbuildinfo"
   },
-  "include": ["src", "tests"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
